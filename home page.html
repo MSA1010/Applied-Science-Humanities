@@ -1,0 +1,645 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <style>
+            *{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+
+}
+@media (max-width: 768px) 
+ 
+
+  
+
+  .footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    padding: 3rem 0;
+  }
+
+  .social_icons i {
+    font-size: 1.3rem;
+    width: 45px;
+    height: 45px;
+  }
+
+  footer {
+    position: absolute;
+    top: 50%;
+    min-height: 50vh;
+  }
+
+  .container h2 {
+    font-size: 4rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+    padding: 2.5rem 0;
+  }
+
+  .container h2 {
+    font-size: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .social_icons i {
+    font-size: 1rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  footer {
+   position:z index 9999px;
+    top: 30%;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+/*body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}*/
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container h2 {
+  font-size: 5rem;
+  color: #ddd;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  box-shadow: -5px -0px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+  text-decoration: none;
+  color: #1c2833;
+}
+
+.footer_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 0;
+  grid-gap: 2.5rem;
+}
+
+.footer_headings {
+  color: #000;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.footer_headings::after {
+  content: "";
+  height: 3px;
+  background: #e74c3c;
+  width: 25%;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+
+.first_section img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+.first_section p {
+  padding: 1.5rem 0;
+  text-align: justify;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_icons i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: #ddd;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+  color: #1c2833;
+}
+
+.social_icons i:hover {
+  transform: translateY(-5px);
+}
+
+/* second sections */
+.second_section ul {
+  list-style: none;
+}
+
+.second_section ul li {
+  margin: 1rem 0;
+}
+
+.second_section ul li:first-child {
+  margin-top: 0;
+}
+
+/* third section */
+.third_section ul {
+  list-style: none;
+}
+
+.third_section ul li {
+  margin: 1rem 0;
+  display: flex;
+}
+
+.third_section ul li:first-child {
+  margin-top: 0;
+}
+
+.third_section ul li i {
+  margin-right: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.third_section span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* fourth section */
+.form_control input,
+textarea {
+  outline: none;
+  border: none;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.fourth_section button {
+  display: block;
+  width: 100%;
+  outline: none;
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 0.6rem 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.footer_txt {
+  background: #f0f3f4;
+  padding: 1.1rem 0;
+  text-align: center;
+  box-shadow: -5px -0px 2px rgba(0, 0, 0, 0.5);
+}
+
+           
+
+
+
+            .mynav .nav-link{
+                color: green;
+            }
+            .fet{
+                height: 70px;
+                width: 100%;
+                
+            }
+            .colers{
+                text-decoration-color: green;
+            }
+          
+    
+    .text5{
+            text-align: center;
+            font-size: 6em;
+            font-family: calibri;
+            color: var(--lightgreen);
+            margin-top: 40px;
+            
+        } 
+        .text6{
+            text-align: center;
+            font-size: 2em;
+            font-family: calibri;
+            color: var(--red);
+            margin-top: 20px;
+        
+            
+        }
+        .text7{
+            font-size: 4em;
+            font-family: calibri;
+            color: gold;
+        }
+        .vc{
+        background-color: blueviolet;
+        text-align: center;
+        font-family: calibri;
+           
+
+        }
+        .vc1{
+        background-color: rgb(207, 191, 222);
+        text-align: center;
+        font-family: calibri;
+           
+
+        }
+        .picup{
+            text-align: center;
+        font-family: calibri;
+        color: rgb(131, 3, 3);
+        font-size: 30pt;
+        }
+    
+
+            
+        </style>
+        
+       
+        <div class="topnav" id="myTopnav">
+           
+            
+           <a href="#home" class="active">Home</a>
+            <a href="#news">About</a>
+            <a href="#contact">Call for paper</a>
+            <a href="#about">Auther Area</a>
+            <a href="#about">Program</a>
+            <a href="#about">Contect</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a></div>
+          
+        
+           
+       <!---upper--->
+       <div class="container-fluid pt-2 pb-2  ">
+        <div class="row  ">
+            <div class="col-md-12">
+                <img src="fet...jpeg" width="100%" height="250px">
+        </div>
+            </div>
+       </div>
+       <!---upper--->
+       <!---headersection--->
+       <div class="container-fluid px-5 py-5 bg-light">
+        <div class="row">
+            
+            <div class="col-md-3">
+                <ul class="nav justify-content-center text-align-center">
+                <img src="jmi logo.png" height="100px" width="100px">
+                <H4></H4>
+            </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="nav justify-content-center text-align-center">
+                <img src="ICnon.png" height="100px" width="100px">
+                <h1 style="color: rgb(240, 244, 5);" class="text7">ICNOC-2024</h1>
+                <h3 style="color: blueviolet;  text-align: center;">International conference<br> ON <br>Nanotechnology: Opurtunities & Challange</h3>
+                </ul>
+               
+                
+            </div>
+            <div class="col-md-3">
+                <img src="jmi 100y.png" height="100px" width="100px" alt="">
+            </div>
+        </div>
+
+       </div>
+       <!---headersection--->
+       
+       <!---DATE MENU-->
+       <div class="container " style="text-align: center; margin-top:5%; margin-bottom:5%">
+        <h3>About ICREST-2024
+        </h3>
+        <p>Department of Applied Sciences and  Humanities is privileged to host an International Conference on Renewable Energy and Sustainable Technology (ICREST-2024) that will be taking place from June 25-26, 2024, held at Jamia Millia Islamia (Central  University), New Delhi-110025. This conference is the premium forum that offers a dynamic blend of professionals, expert keynotes, researchers, and industry leaders from  the renewable energy and sustainable technology sectors to explore and fostering collaboration that will provide a pathway for future energy technology. ICREST-2024 will feature invited talks from national and international experts in the field of renewable energy which is an excellent opportunity for participants to get exposure to the latest development in the filed of  energy.
+        </p>
+    </div>
+    <div class="container " style="text-align: center; margin-top:5%; margin-bottom:5%">
+        <h3>About the Department
+
+        </h3>
+        <p>Established in 1996, as one among the departments of the Faculty of  Engineering and Technology, Department of Applied Sciences and  Humanities oﬀers three master programs namely; M.Sc. (Electronic),  M.Tech. (Energy Science & Technology) and M.Tech. (Computational  Mathematics). In addition to this, the department participates in the  teaching of B.Tech. and M.Tech. programs oﬀered by other departments  of Faculty of Engineering & Technology. It is a multi-disciplinary  department focusing on the research and development in the areas of  nanotechnology, renewable energy, nanodevices, optical fiber sensors,  environmental science, analytical chemistry, polymer and green  chemistry, special functions, fuzzy logic, cryptography, differential  geometry, multiple-criteria decision analysis and humanities.
+
+        </p>
+    </div>
+    <div class="container " style="text-align: center; margin-top:5%; margin-bottom:5%">
+        <h3>About Jamia Millia Islamia
+
+        </h3>
+        <p>Jamia Millia Islamia is one of reputed central universities of the  country. The University, born oﬀ the Indian National Movement and  patriotic fervor, was founded in response to a call by Mahatma Gandhi  in 1920 to boycott the Government-supported institutions. It has  become an ensemble of a multi-layered educational system that covers  all aspects of schooling, under-graduate, post-graduate, M.Phil./ Ph.D.,  and post-doctoral education. With 9 faculties of learning, 38 teaching,  and research departments, and over 27 centers of learning and research,  the university attracts the brightest young minds from all over the  country. In recent years Jamia has made significant strides. It got  NAAC Accreditation with Grade ‘A++’ in 2020. The MHRD’s  National Institutional Ranking Framework (NIRF) placed it at the 6th  position in the “University Ranking” for 2021. The University has been  benchmarking in its teaching and research processes by increasing its  interface with foreign educational institutions through faculty exchange,  student exchange, joint research, joint conference, and joint publication.  Internationalizing the university is being given top priority. The  university is optimally using the GIAN and VAJRA initiatives of the  Government of India to boost quality education and draw the best  academic and research personnel to the university. The university is also  encouraging entrepreneurship and innovation on the campus. Jamia  Millia Islamia completed hundred years of its existence in 2020.
+
+        </p>
+    </div>
+    <div class="container " style="text-align: center; margin-top:5%; margin-bottom:5%">
+        <h3>Call For Paper
+
+        </h3>
+        <p>The purpose of International Conference (ICRSET-2024) is to bring together academicians, nanotechnology and its allied fields. Papers presenting original work are  invited in the areas listed below. Topics of interest for submission include, but are not limited to:
+
+
+        </p></div>
+       <div> <ul>
+            <li>Solar Energy 
+                Perovskite solar cell
+                Thin film solar cell<br>
+                Hybrid Solar cell
+                Concentrated PV cell
+                Dye-sensitized solar cell 
+            </li>
+            <li>Wand Energy</li>
+            <li>Biomens</li>
+            <li>Hydro Power</li>
+            <li>Fuel Cell</li>
+            <li>Sustainable Energy Policies</li>
+            <li>Waste to Energy</li>
+            <li>Smart power Grid</li></ul>
+           <ul></div>
+           <div>
+             <li>Green Buildings  </li>
+            <li> Energy storage and Conservations 
+            </li>
+            <li>Environmental Nano-technologies 
+            </li>
+            <li>Photovoltaic Systems
+            </li>
+            <li>Solar thermal  and Hydrothermal  systems
+            </li>
+            <li>Hydrogen Production
+            </li>
+            <li>(Grey , Blue and Green)
+            </li>
+            <li>Sustainable Technologies
+            </li>
+            <li>Nano-materials for Energy Application
+            </li>
+        </ul></div>
+           
+
+        
+    
+
+
+       <!---DATE MENU-->
+       <!--conference committe-->
+       <!---1-->
+       <div class="container-fluid pt-1  bg-light">
+        <div class="row">
+            
+            <div class="col-md-1"></div>
+
+            <div class="col-md-4">
+                <h2 class="picup">CHIEF PATRON</h2>
+                <img src="jmi vc.png" width="472" height="250" >
+                <p class="vc1">  Padma Shri Prof. Najma Akhtar<BR>
+
+                    Vice-Chancellor Jamia Millia Islamia, New Delhi, India</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <h2 class="picup">PATRON</h2>
+                <img src="jmi registrar.png" width="472" height="250" >
+                <p class="vc1">    Prof. Nazim Husain Al-Jafri<br>
+
+                    Registrar, Jamia Millia Islamia, New Delhi, India
+                    
+                    </p>   
+            </div>
+            <div class="col-md-1"></div>
+            
+        </div>
+       </div>
+    </div>
+       <!---1-->
+       <!---2-->
+       <div class="container-fluid pt-1  bg-light">
+        <div class="row">
+            
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h2 class="picup">CO-PATRON</h2>
+                <img src="dean fet.png" width="472" height="250" >
+                <p class="vc1">   Prof. Mini Shaji Thomas<br>
+
+                    Dean, Faculty of Engineering and Technology<br>
+                    
+                    Jamia Millia Islamia, New Delhi, India</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <h2 class="picup">ORGANIZING CHAIR</h2>
+                <img src="HOD A S.png" width="472" height="250" >
+                <p class="vc1">     Prof. Zishan Husain Khan<br>
+
+                    Head, Department of Applied Sciences and Humanities<br>
+                    
+                    Jamia Millia Islamia, New Delhi, India
+                    
+                    </p>   
+            </div>
+            <div class="col-md-1"></div>
+            
+        </div>
+       </div>
+    </div>
+
+       <!---2-->
+       
+      
+       <!--3-->
+       <div class="container-fluid pt-1  bg-light">
+        <div class="row">
+            <h2 class="picup">ORGANIZING SECRETARIES</h2>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <img src="MPS SIR.png" width="472" height="250" >
+                <p class="vc1">  Dr. Mukesh Pratap Singh 
+
+                    Department of Applied Sciences and Humanities
+                    
+                    Jamia Millia Islamia, New Delhi, India</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <img src="DENTISTY FECULTY.png" width="472" height="250" >
+                <p class="vc1">   Prof. Nafis Ahmad
+
+                    Faculty of Dentistry
+                    
+                    Jamia Millia Islamia, New Delhi, India</p>   
+            </div>
+            <div class="col-md-1"></div>
+            
+        </div>
+       </div>
+    </div>
+       <!---3-->
+
+       <!--conference committe-->
+       <!---BOTTOM-->
+      
+       <div class="container">
+        <h2>Website Content</h2>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="footer_content">
+            <div class="first_section">
+              <h3 class="footer_headings">About Us</h3>
+              <img src="images/logo-1.png" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                adipisci minus ratione nulla cum ut repellendus omnis, odit
+                ducimus nisi?
+              </p>
+              <div class="social_icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+            <div class="second_section">
+              <h3 class="footer_headings">Useful links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="third_section">
+              <h3 class="footer_headings">Address</h3>
+              <ul>
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <span>admin@onlineittuts.com</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>A108 Adam Street, New York, NY </span>
+                </li>
+  
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+15589 55488 55</span>
+                </li>
+              </ul>
+            </div>
+            <div class="fourth_section">
+              <h3 class="footer_headings">Contact Us</h3>
+              <form action="#">
+                <div class="form_control">
+                  <input type="text" placeholder="Enter an Email" />
+                </div>
+                <div class="form_control">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="10"
+                    rows="5"
+                    placeholder="Write Message....."
+                  ></textarea>
+                </div>
+                <button type="button">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer_txt">
+          <p>
+            All rights reservered by
+            <a href="https://www.onlineittuts.com">OnlineITtuts</a> &copy; 2023.
+          </p>
+        </div>
+      </footer>
+      
+       <!---BOTTOM-->
+
+    </body>
+</html>
